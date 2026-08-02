@@ -7,9 +7,9 @@ This is my first webpage.
 These are my blog posts:
 
 <ul>
-  {% for post in site.post %}
+  {% for post in site.posts %}
     <li>
-      <a herf="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
     </li>
   {% endfor %}
 </ul>
